@@ -2,15 +2,12 @@ package com.dubbo.exe.controller;
 
 import bean.UserAddress;
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.alibaba.spring.util.ObjectUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import service.OrderService;
 import service.UserService;
-
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @RestController
