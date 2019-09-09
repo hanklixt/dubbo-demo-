@@ -16,7 +16,7 @@ public class OrderController {
     @Autowired
     OrderService orderService;
 
-    @Reference(timeout = 1000)
+    @Reference(timeout = 1000,version = "2.0.0")
     UserService UserService;
 
     @GetMapping("/getUserAddressById/{id}")

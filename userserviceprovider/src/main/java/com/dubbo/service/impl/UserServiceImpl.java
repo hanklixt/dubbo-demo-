@@ -9,7 +9,7 @@ import service.UserService;
 import java.util.Arrays;
 import java.util.List;
 
-@Service
+@Service(version = "2.0.0")
 @Component
 public class UserServiceImpl implements UserService {
     public List<UserAddress> selectById(Integer id) {
