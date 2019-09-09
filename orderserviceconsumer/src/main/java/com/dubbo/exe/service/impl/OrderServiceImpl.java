@@ -1,17 +1,17 @@
 package com.dubbo.exe.service.impl;
 
 import bean.UserAddress;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.alibaba.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Service;
 import service.OrderService;
 import service.UserService;
-
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service
 public class OrderServiceImpl implements OrderService {
 
-    @Autowired
+    @Reference
     UserService userService;
 
     public void initOrder() {
